@@ -14,13 +14,15 @@
 
 :root {
     --white: #FFFFFF;
-    --body: #D9D9D9;
+    --body: rgba(217, 217, 217, 0.3);
 }
 
 body {
     height: 100vh;
     width: 100%;
-    background: url(./cocktail.png) center / cover no-repeat;
+    background: url(./cocktail.png) center / 100vw 100vh no-repeat;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -43,6 +45,8 @@ h1 {
     padding-top: 1rem;
     word-spacing: 15px;
     letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-weight: normal;
 }
 
 button {
@@ -55,4 +59,21 @@ button {
 
 button:hover {
     cursor: pointer;
+}
+
+#content {
+    border: none;
+    align-self: center;
+    width: 60vw;
+    height: 65vh;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--body);
+    display: grid;
+    gap: 10px;
+}
+
+.tab {
+    border-radius: 15px;
+    background-color: rgba(217, 217, 217, 0.45);
 }
