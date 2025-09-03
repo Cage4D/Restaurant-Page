@@ -75,6 +75,10 @@ button:hover {
     gap: 10px;
 }
 
+.content {
+    grid-template-rows: repeat(3, 1fr);
+}
+
 .tab {
     border-radius: 15px;
     background-color: rgba(217, 217, 217, 0.45);
