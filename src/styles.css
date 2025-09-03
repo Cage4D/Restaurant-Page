@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -15,6 +16,7 @@
 :root {
     --white: #FFFFFF;
     --body: rgba(217, 217, 217, 0.3);
+    --body-text: #1D2337;
 }
 
 body {
@@ -76,4 +78,40 @@ button:hover {
 .tab {
     border-radius: 15px;
     background-color: rgba(217, 217, 217, 0.45);
+    padding: 10px;
+    font-family: "Mochiy", serif;
+    font-size: 14px;
+    color: var(--body-text);
+}
+
+.tab1 {
+    display: grid;
+    grid-template-rows: 1fr 30px;
+    align-items: center;
+}
+
+/* .tab1:first-child {
+    
+} */
+
+.last-child {
+    justify-self: end;
+    align-self: start;
+    padding-right: 1em;
+}
+
+.tab2 {
+    display: grid;
+    grid-template:repeat(4, 1fr) / repeat(3, 1fr);
+    justify-items: center;
+}
+
+.Hours, 
+.Saturday {
+    grid-column: 1 / span 3;
+}
+
+.tab3 {
+    display: grid;
+    justify-items: center;
 }
