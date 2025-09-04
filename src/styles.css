@@ -141,3 +141,23 @@ button:hover {
     font-size: 15px;
     color:  #006400;
 }
+
+/*ABOUT*/
+
+.about {
+    display: grid;
+    justify-items: center;
+}
+
+.H1 {
+    align-self: end;
+    padding-bottom: 0.8rem;
+    font-size: 24px;
+}
+
+.B2 {
+    align-self: start;
+    font-style: italic;
+    padding: 0 2rem;
+    font-size: 16px;
+}
