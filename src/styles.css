@@ -119,3 +119,25 @@ button:hover {
 }
 
 /*MENU PAGE*/
+
+.menu {
+     display: grid; 
+     justify-items: center; 
+}
+
+.head {
+    font-weight: bold;
+    align-self: center;
+    color: #640000;
+}   
+
+.body {
+    color: #000064;
+}
+
+.price {
+    justify-self: end;
+    padding-right: 1rem;
+    font-size: 15px;
+    color:  #006400;
+}
