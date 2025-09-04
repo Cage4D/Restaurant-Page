@@ -22,6 +22,10 @@ buttons.forEach(btn => {
 
 function clickBtn(e) {
     removePreviousTab()
+    for (const btn of buttons) {
+        btn.classList = ""
+    }
+    e.target.classList.add("shadow")
     const btnClicked = e.target.textContent
     const title = `${btnClicked.slice(0, 1).toUpperCase()}${btnClicked.slice(1).toLowerCase()}`
     for (const [key, value] of Object.entries(modules)) {
@@ -47,3 +51,4 @@ function firstTime() {
 }
 
 firstTime()
+home.classList.add("shadow")
