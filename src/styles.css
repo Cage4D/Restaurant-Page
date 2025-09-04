@@ -88,15 +88,13 @@ button:hover {
     color: var(--body-text);
 }
 
+/*HOME PAGE*/
+
 .tab1 {
     display: grid;
     grid-template-rows: 1fr 30px;
     align-items: center;
 }
-
-/* .tab1:first-child {
-    
-} */
 
 .last-child {
     justify-self: end;
@@ -119,3 +117,5 @@ button:hover {
     display: grid;
     justify-items: center;
 }
+
+/*MENU PAGE*/
