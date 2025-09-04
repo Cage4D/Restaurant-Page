@@ -1,187 +1,193 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "Mochiy";
-    src: url(./font/MochiyPopOne-Regular.woff) format(woff);
+  font-family: "Mochiy";
+  src: url(./font/MochiyPopOne-Regular.woff) format(woff);
 }
 
 @font-face {
-    font-family: "Sheppards";
-    src: url(./font/MrsSheppards-Regular.woff) format(woff);
+  font-family: "Sheppards";
+  src: url(./font/MrsSheppards-Regular.woff) format(woff);
 }
 
 :root {
-    --white: #FFFFFF;
-    --body: rgba(217, 217, 217, 0.3);
-    --body-text: #1D2337;
+  --white: #ffffff;
+  --body: rgba(217, 217, 217, 0.3);
+  --body-text: #1d2337;
 }
 
 body {
-    height: 100vh;
-    width: 100%;
-    background: url(./cocktail.png) center / 100vw 100vh no-repeat;
-    display: flex;
-    flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background: url(./cocktail.png) center / 100vw 100vh no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    display: grid;
-    margin-top: 2rem;
-    grid-template-rows: 1fr 3fr;
+  display: grid;
+  margin-top: 2rem;
+  grid-template-rows: 1fr 3fr;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
 }
 
 h1 {
-    font-family: "Sheppards", serif;
-    font-size: 3.5rem;
-    color: var(--white);
-    place-self: center;
-    padding-top: 1rem;
-    word-spacing: 15px;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
-    font-weight: normal;
+  font-family: "Sheppards", serif;
+  font-size: 3.5rem;
+  color: var(--white);
+  place-self: center;
+  padding-top: 1rem;
+  word-spacing: 15px;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  font-weight: normal;
 }
 
 button {
-    border: none;
-    background: none;
-    color: var(--white);
-    font-size: 1rem;
-    font-family: "Mochiy", serif;
+  border: none;
+  background: none;
+  color: var(--white);
+  font-size: 1rem;
+  font-family: "Mochiy", serif;
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #content {
-    border: none;
-    align-self: center;
-    width: 60vw;
-    height: 65vh;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: var(--body);
-    display: grid;
-    gap: 10px;
+  border: none;
+  align-self: center;
+  width: 60vw;
+  height: 65vh;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: var(--body);
+  display: grid;
+  gap: 10px;
 }
 
 .content {
-    grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .tab {
-    border-radius: 15px;
-    background-color: rgba(217, 217, 217, 0.45);
-    padding: 10px;
-    font-family: "Mochiy", serif;
-    font-size: 14px;
-    color: var(--body-text);
-    animation: intro 1s ease forwards;
+  border-radius: 15px;
+  background-color: rgba(217, 217, 217, 0.45);
+  padding: 10px;
+  font-family: "Mochiy", serif;
+  font-size: 14px;
+  color: var(--body-text);
+  animation: intro 1s ease forwards;
 }
 
 /*HOME PAGE*/
 
 .tab1 {
-    display: grid;
-    grid-template-rows: 1fr 30px;
-    align-items: center;
+  display: grid;
+  grid-template-rows: 1fr 30px;
+  align-items: center;
 }
 
 .last-child {
-    justify-self: end;
-    align-self: start;
-    padding-right: 1em;
+  justify-self: end;
+  align-self: start;
+  padding-right: 1em;
 }
 
 .tab2 {
-    display: grid;
-    grid-template:repeat(4, 1fr) / repeat(3, 1fr);
-    justify-items: center;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  justify-items: center;
 }
 
-.Hours, 
+.Hours,
 .Saturday {
-    grid-column: 1 / span 3;
+  grid-column: 1 / span 3;
 }
 
 .tab3 {
-    display: grid;
-    justify-items: center;
+  display: grid;
+  justify-items: center;
 }
 
 /*MENU PAGE*/
 
 .menu {
-     display: grid; 
-     justify-items: center; 
+  display: grid;
+  justify-items: center;
 }
 
 .head {
-    font-weight: bold;
-    align-self: center;
-    color: #640000;
-}   
+  font-weight: bold;
+  align-self: center;
+  color: #640000;
+}
 
 .body {
-    color: #000064;
+  color: #000064;
 }
 
 .price {
-    justify-self: end;
-    padding-right: 1rem;
-    font-size: 15px;
-    color:  #006400;
+  justify-self: end;
+  padding-right: 1rem;
+  font-size: 15px;
+  color: #006400;
 }
 
 /*ABOUT*/
 
 .about {
-    display: grid;
-    justify-items: center;
+  display: grid;
+  justify-items: center;
 }
 
 .H1 {
-    align-self: end;
-    padding-bottom: 0.8rem;
-    font-size: 24px;
+  align-self: end;
+  padding-bottom: 0.8rem;
+  font-size: 24px;
 }
 
 .B2 {
-    align-self: start;
-    font-style: italic;
-    padding: 0 2rem;
-    font-size: 16px;
+  align-self: start;
+  font-style: italic;
+  padding: 0 2rem;
+  font-size: 16px;
 }
 
 /*CONTACT*/
 div[class*="contact"] {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
 }
 
 .name {
-    grid-column: 1 / span 3;
+  grid-column: 1 / span 3;
 }
 
 /*CONTAINER ANIMATION*/
 @keyframes intro {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    } 
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/*SELECTED-ELEMENT*/
+.shadow {
+  text-shadow: 0 0 4px #007bffcc, 0 0 10px #3399ffbb, 0 0 20px #66b2ff66,
+    0 0 30px #3399ff88, 0 0 2px #002a8044;
 }
