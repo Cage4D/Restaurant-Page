@@ -161,3 +161,14 @@ button:hover {
     padding: 0 2rem;
     font-size: 16px;
 }
+
+/*CONTACT*/
+div[class*="contact"] {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.name {
+    grid-column: 1 / span 3;
+}
